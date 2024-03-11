@@ -1,11 +1,13 @@
 import SwiftUI
 import Combine
+import FirebaseFirestore
 
 class ProductsViewModel: ObservableObject {
     @Published var products: [Product] = []
     private var cancellable: AnyCancellable?
+    private var db = Firestore.firestore()
     
-
+    
     
     func fetchProducts(completion: @escaping (Error?) -> Void){
         obtenerProductos { result in
@@ -20,8 +22,8 @@ class ProductsViewModel: ObservableObject {
                     guard let id = dict["id"] as? Int,
                           let title = dict["title"] as? String,
                           let description = dict["description"] as? String,
-                          let price = dict["price"] as? Double, 
-                          let image = dict["image"] as? String else {
+                          let price = dict["price"] as? Double,
+                            let image = dict["image"] as? String else {
                         return nil
                     }
                     
@@ -44,5 +46,15 @@ class ProductsViewModel: ObservableObject {
     
     func product(at index: Int) -> Product {
         return products[index]
+    }
+    
+    
+    func upload(pedido: Compra){
+        do{
+            try db.collection("Pedidos").addDocument(from: pedido.order)
+        }catch let error{
+            print("Error de escritura \(error)")
+        }
+        
     }
 }

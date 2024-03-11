@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 
 
-struct ProductDemo: Identifiable{
+struct ProductDemo: Identifiable, Codable{
     let id: Int
     var title:String
     var price: Double
@@ -17,6 +18,11 @@ struct ProductDemo: Identifiable{
     var category: String
     var image: String
     
+}
+
+struct Order:Codable{
+    @DocumentID var identify:String?
+    var products: [ProductDemo]=[MockData.sampleProduct1,MockData.sampleProduct3]
 }
 
 
