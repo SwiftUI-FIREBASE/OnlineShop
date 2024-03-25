@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductModalView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var compra:Compra
     var producto: ProductDemo
     
     var body: some View {
@@ -37,10 +38,9 @@ struct ProductModalView: View {
                     HStack {
                         Spacer()
                         Button(action:{
-                            /*ProductsViewModel().upload(pedido: compra)
-                            compra.emptyCar()
-                                */} ) {
-                                    Text("109.95 €  Añadir")
+                            compra.addTo(seleccion: producto)
+                        } ) {
+                            Text("\(String (format: "%.2f", producto.price)) €  Añadir")
                                         .padding()
                                         .foregroundColor(.white)
                                         .background(.red)
@@ -114,7 +114,15 @@ struct ColorDotView: View {
 
 
 
-struct ProductModalView_Previews: PreviewProvider {
+
+
+
+
+#Preview {
+    ProductModalView(producto: MockData.sampleProduct1).environmentObject(Compra())
+}
+
+/*struct ProductModalView_Previews: PreviewProvider {
     static var previews: some View {
         ProductModalView(producto: ProductDemo(id: 1,
                                                title: "Fjallraven Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -122,8 +130,8 @@ struct ProductModalView_Previews: PreviewProvider {
                                                description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
                                                category: "men's clothing",
                                                image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-                                               rating: ProductDemo.Rating(rate: 4.9)))
+                                               rating: ProductDemo.Rating(rate: 4.9))).environmentObject(Compra())
 
     }
-}
+}*/
  
