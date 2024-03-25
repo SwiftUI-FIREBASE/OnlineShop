@@ -31,14 +31,15 @@ struct ShoppingView: View {
                 }
             }
             Button(action:{
-                        //rollDice(value1: &diceValue_1, value2: &diceValue_2)
+                ProductsViewModel().upload(pedido: compra)
+                compra.emptyCar()
                     } ) {
-                        Text("Roll")
+                        Text("Comprar $\(String (format: "%.2f", compra.calcularPrecio()))")
                             .padding()
                             .foregroundColor(.white)
                             .background(.red)
                             .cornerRadius(10)
-                    }.shadow(color: .red, radius: 15, y: 5)
+                    }
         }
             
         }

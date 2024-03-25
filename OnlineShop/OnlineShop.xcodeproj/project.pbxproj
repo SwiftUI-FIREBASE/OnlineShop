@@ -19,6 +19,7 @@
 		C20F974E2B891610005FF70C /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F974D2B891610005FF70C /* OnlineShopTests.swift */; };
 		C20F97582B891610005FF70C /* OnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F97572B891610005FF70C /* OnlineShopUITests.swift */; };
 		C20F975A2B891610005FF70C /* OnlineShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F97592B891610005FF70C /* OnlineShopUITestsLaunchTests.swift */; };
+		C2A2A7662BB1F07A004DCBAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A2A7652BB1F07A004DCBAE /* GoogleService-Info.plist */; };
 		C2BBA5CD2B9F8627009F15FA /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBA5CC2B9F8627009F15FA /* ShoppingView.swift */; };
 		C2BBA5CF2B9F8741009F15FA /* Compra.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBA5CE2B9F8741009F15FA /* Compra.swift */; };
 		C2D59CD22B8930C900DF50E2 /* OnLineShopFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D59CD12B8930C900DF50E2 /* OnLineShopFirebase.swift */; };
@@ -63,6 +64,7 @@
 		C20F97532B891610005FF70C /* OnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20F97572B891610005FF70C /* OnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITests.swift; sourceTree = "<group>"; };
 		C20F97592B891610005FF70C /* OnlineShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2A2A7652BB1F07A004DCBAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2BBA5CC2B9F8627009F15FA /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
 		C2BBA5CE2B9F8741009F15FA /* Compra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compra.swift; sourceTree = "<group>"; };
 		C2D59CD12B8930C900DF50E2 /* OnLineShopFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnLineShopFirebase.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		C20F973B2B89160E005FF70C /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				C2A2A7652BB1F07A004DCBAE /* GoogleService-Info.plist */,
 				C2D59CD12B8930C900DF50E2 /* OnLineShopFirebase.swift */,
 				C20F973C2B89160E005FF70C /* OnlineShopApp.swift */,
 				C20F973E2B89160E005FF70C /* ContentView.swift */,
@@ -312,6 +315,7 @@
 			files = (
 				C20F97442B891610005FF70C /* Preview Assets.xcassets in Resources */,
 				C20F97412B891610005FF70C /* Assets.xcassets in Resources */,
+				C2A2A7662BB1F07A004DCBAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

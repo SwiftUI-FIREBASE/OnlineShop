@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
 
 
 class Compra : ObservableObject{
     @Published var order  : Order
+    //private var db = Firestore.firestore()
+
     
     init() {
         self.order = Order()
@@ -35,6 +39,15 @@ class Compra : ObservableObject{
         case productos
 
       }
+    
+    /*func upload(){
+        do{
+            try db.collection("Pedidos").addDocument(from: self.order)
+        }catch let error{
+            print("Error de escritura \(error)")
+        }
+        
+    }*/
     
     
 
