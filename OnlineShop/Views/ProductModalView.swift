@@ -46,6 +46,7 @@ struct ProductModalView: View {
                                         .background(.red)
                                         .cornerRadius(10)
                                 }
+                        Spacer()
                     }
                 }
             }
