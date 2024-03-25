@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductModalView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var compra:Compra
-    var producto: ProductDemo
+    var producto: Product
     
     var body: some View {
         VStack{
@@ -55,7 +55,7 @@ struct ProductModalView: View {
 }
 
 struct DescriptionView: View {
-    var producto: ProductDemo
+    var producto: Product
     
     var body: some View {
         VStack (alignment: .leading){
@@ -117,10 +117,10 @@ struct ColorDotView: View {
 
 
 
-
+/*
 #Preview {
     ProductModalView(producto: MockData.sampleProduct1).environmentObject(Compra())
-}
+}*/
 
 /*struct ProductModalView_Previews: PreviewProvider {
     static var previews: some View {

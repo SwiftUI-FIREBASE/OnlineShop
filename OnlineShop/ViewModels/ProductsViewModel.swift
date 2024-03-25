@@ -23,13 +23,15 @@ class ProductsViewModel: ObservableObject {
                           let title = dict["title"] as? String,
                           let description = dict["description"] as? String,
                           let price = dict["price"] as? Double,
-                            let image = dict["image"] as? String else {
-                        return nil
-                    }
+                          let image = dict["image"] as? String,
+                          let rating = dict["rating"] as? Product.Rating else {
+                              return nil
+                          }
                     
                     
-                    self.products.append(Product(id: id, title: title, description: description, price: price, image: image))
-                    return Product(id: id, title: title, description: description, price: price, image: image)
+                    
+                    self.products.append(Product(id: id, title: title, price: price, description: description, image: image, rating: rating))
+                    return Product(id: id, title: title, price: price, description: description, image: image, rating: rating)
                 }
                 
                 completion(nil)
