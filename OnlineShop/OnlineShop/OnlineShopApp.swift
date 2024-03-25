@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct OnlineShopApp: App {
+    var compra = Compra()
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            /*var modelo = ProductsViewModel()
+            var lista = modelo.products
+            ProductListView(list: ProductsViewModel().products)*/
+            MainView().environmentObject(compra)
+            
         }
     }
 }
