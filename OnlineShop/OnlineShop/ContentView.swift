@@ -39,8 +39,8 @@ struct ContentView: View {
                                         Text("$\(product.price)")
                                             .font(.subheadline)
                                     }
-                                }.sheet(isPresented: $showing) {
-                                    ProductModalView(producto: product)}
+                                }/*.sheet(isPresented: $showing) {
+                                    ProductModalView(producto: product)}*/
                 }
                 .navigationTitle("Products")
             }

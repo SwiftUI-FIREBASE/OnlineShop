@@ -1,9 +1,9 @@
 //
 //  ProductListView.swift
 //  OnlineShop
-//
+
 //  Created by  on 23/2/24.
-//
+
 
 import SwiftUI
 
@@ -20,8 +20,8 @@ struct ProductListView: View {
                                     showing.toggle()
                                 }) {
                                     Text(current.title)
-                                }.sheet(isPresented: $showing) {
-                                    ProductModalView(producto: current)}
+                                }/*.sheet(isPresented: $showing) {
+                                    ProductModalView(producto: current)}*/
                     
                     
                     /* Button(action: {
