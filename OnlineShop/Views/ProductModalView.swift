@@ -36,9 +36,16 @@ struct ProductModalView: View {
                     
                     HStack {
                         Spacer()
-                        Text("109.95 €")
-                            .font(.title)
-                            .padding(.trailing, 20)
+                        Button(action:{
+                            /*ProductsViewModel().upload(pedido: compra)
+                            compra.emptyCar()
+                                */} ) {
+                                    Text("109.95 €  Añadir")
+                                        .padding()
+                                        .foregroundColor(.white)
+                                        .background(.red)
+                                        .cornerRadius(10)
+                                }
                     }
                 }
             }
