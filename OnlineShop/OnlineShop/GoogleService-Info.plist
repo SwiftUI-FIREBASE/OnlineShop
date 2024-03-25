@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBKVFGYFg-LFFDip7k1cRjEX4RF_PPGJWM</string>
+	<string>AIzaSyBlnm_v97n2e5hxXztgvLEiQJfFV062ayA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1003795271036</string>
+	<string>6019686677</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>org.egibide.pmdm.OnlineShop</string>
 	<key>PROJECT_ID</key>
-	<string>onlineshop-fbe85</string>
+	<string>onlineshop2024-fl</string>
 	<key>STORAGE_BUCKET</key>
-	<string>onlineshop-fbe85.appspot.com</string>
+	<string>onlineshop2024-fl.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1003795271036:ios:c2595e04ce0c6a077b68f9</string>
+	<string>1:6019686677:ios:5ee4e4cac3d3b039e6891c</string>
 </dict>
 </plist>
