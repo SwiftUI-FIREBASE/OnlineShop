@@ -125,6 +125,7 @@
 		C20F97302B89160E005FF70C = {
 			isa = PBXGroup;
 			children = (
+				C2C72C6D2B9FA3FD0091DC40 /* GoogleService-Info (2).plist */,
 				C203A1202B965DB3009C2138 /* DemoModel */,
 				C203A1222B965DB4009C2138 /* Views */,
 				C2DE74682B965180005EAA7D /* ViewModels */,
@@ -313,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C72C6E2B9FA3FD0091DC40 /* GoogleService-Info (2).plist in Resources */,
 				C20F97442B891610005FF70C /* Preview Assets.xcassets in Resources */,
 				C20F97412B891610005FF70C /* Assets.xcassets in Resources */,
 				C2A2A7662BB1F07A004DCBAE /* GoogleService-Info.plist in Resources */,
