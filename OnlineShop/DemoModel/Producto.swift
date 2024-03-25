@@ -4,7 +4,7 @@ import Foundation
 import FirebaseFirestore
 
 
-struct ProductDemo: Identifiable {
+struct ProductDemo: Identifiable, Codable {
     let id: Int
     var title: String
     var price: Double
