@@ -18,7 +18,7 @@ class Compra : ObservableObject{
     init() {
         self.order = Order()
     }
-    func addTo(seleccion: ProductDemo){
+    func addTo(seleccion: Product){
         order.products.append(seleccion)
     }
     

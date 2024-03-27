@@ -8,6 +8,9 @@
 import Foundation
 
 
+
+
+
 func obtenerProductos(completion: @escaping (Result<Any, Error>) -> Void) {
     // Define la URL de la API
     let url = URL(string: "https://fakestoreapi.com/products")!

@@ -39,19 +39,19 @@ struct ContentView: View {
                                         Text("$\(product.price)")
                                             .font(.subheadline)
                                     }
-                                }.sheet(isPresented: $showing) {
-                                    ProductModalView(producto: product)}
+                                }/*.sheet(isPresented: $showing) {
+                                    ProductModalView(producto: product)}*/
                 }
                 .navigationTitle("Products")
             }
         }
-        .onAppear {
+        /*.onAppear {
             viewModel.fetchProducts { error in
                 if let error = error {
                     print("Error fetching products: \(error)")
                 }
             }
-        }
+        }*/
     }
 }
 

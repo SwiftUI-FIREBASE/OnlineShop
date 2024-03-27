@@ -11,11 +11,11 @@ struct MainView: View {
     @EnvironmentObject var compra : Compra
     var body: some View {
         TabView{
-            ContentView()
+            ProductListView()
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            ContentView()
+            AccountView()
                 .tabItem {
                     Label("Account", systemImage: "person.fill")
                 }
