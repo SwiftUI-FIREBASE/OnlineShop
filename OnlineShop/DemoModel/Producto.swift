@@ -33,7 +33,7 @@ struct ProductDemo: Identifiable, Codable {
 
 struct Order: Codable{
     @DocumentID var identify:String?
-    var products: [Product]=[MockData.sampleProduct1,MockData.sampleProduct3]
+    var products: [Product]=[]
 }
 
 
