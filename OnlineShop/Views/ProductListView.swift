@@ -41,13 +41,13 @@ struct ProductListView: View {
         }detail: {
             Text("...")
         }
-        .onAppear {
-            model.fetchProducts { error in
+        /*.onAppear {
+            model. { error in
                 if let error = error {
                     print("Error fetching products: \(error)")
                 }
             }
-        }
+        }*/
     }
 }
 

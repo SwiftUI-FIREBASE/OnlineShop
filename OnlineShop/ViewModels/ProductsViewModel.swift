@@ -7,10 +7,39 @@ class ProductsViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     private var db = Firestore.firestore()
     
+    init(){
+        fetchProducts()
+    }
+  
+
     
-    
-    func fetchProducts(completion: @escaping (Error?) -> Void){
-        obtenerProductos { result in
+    func fetchProducts() {
+        
+        Task{ //hace que sea asíncrona la tarea, consiguiendo concurrencia
+            do{
+                let weather_file = try await NetworkManager.shared.getProducts()
+                self.products.append(weather_file)
+            }catch{
+                
+                if let callError = error as? WEError {
+                    switch callError{
+                    case .invalidURL:
+                        print("Invalid URL")
+                    case .invalidResponse:
+                        print("Invalid response")
+                    case .invalidData:
+                        print("Invalid data")
+                    case .unableToComplete:
+                        print("Unable to complete")
+                    }
+                    
+                }else{
+                    //Generic error
+                    print("Invalid response")
+                }
+            }
+        }
+        /*obtenerProductos { result in
             switch result {
             case .success(let json):
                 guard let jsonArray = json as? [[String: Any]] else {
@@ -36,8 +65,8 @@ class ProductsViewModel: ObservableObject {
                 
             case .failure(let error):
                 completion(error)
-            }
-        }
+            }*/
+        
     }
     
     func numberOfProducts() -> Int {
