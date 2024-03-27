@@ -7,17 +7,19 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ProductModalView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var compra:Compra
+    @EnvironmentObject var compra: Compra
     var producto: Product
     
     var body: some View {
-        VStack{
-            Spacer()
-            ZStack{
+        VStack {
+            ZStack {
                 Color(red: 245/255, green: 245/255, blue: 220/255)
                     .edgesIgnoringSafeArea(.all)
+                
                 VStack {
                     producto.loadImage()
                         .resizable()
@@ -26,26 +28,13 @@ struct ProductModalView: View {
                         .background(Color.white)
                         .edgesIgnoringSafeArea(.top)
                     
-                    Spacer()
-                    
                     DescriptionView(producto: producto)
                         .background(Color("Bg"))
                         .cornerRadius(20)
-                        .offset(y: -40)
+                        .padding(.top, -40)
+                        .padding(.bottom, 20) // Add some bottom padding
                     
-                    HStack {
-                        Spacer()
-                        Button(action:{
-                            compra.addTo(seleccion: producto)
-                        } ) {
-                            Text("\(String (format: "%.2f", producto.price)) €  Añadir")
-                                        .padding()
-                                        .foregroundColor(.white)
-                                        .background(.red)
-                                        .cornerRadius(10)
-                                }
-                        Spacer()
-                    }
+                    Spacer()
                 }
             }
         }
@@ -54,16 +43,17 @@ struct ProductModalView: View {
 
 struct DescriptionView: View {
     var producto: Product
+    @EnvironmentObject var compra: Compra
+
     
     var body: some View {
-        VStack (alignment: .leading){
-            Text(producto.title) // Usar el título del producto en lugar de un texto estático
+        VStack(alignment: .leading) {
+            Text(producto.title) // Use the product title instead of static text
             
-            HStack (spacing: 4){
+            HStack(spacing: 4) {
                 ForEach(0 ..< 5) { index in
                     Image(systemName: index < Int(producto.rating.rate) ? "star.fill" : "star")
                         .foregroundColor(.yellow)
-
                 }
                 Text("(\(producto.rating.rate))")
                     .opacity(0.5)
@@ -75,22 +65,33 @@ struct DescriptionView: View {
                 .fontWeight(.medium)
                 .padding(.vertical, 8)
             
-            Text(producto.description) // Usar la descripción del producto
+            Text(producto.description) // Use the product description
             
             Spacer()
             
             HStack {
-                VStack (alignment: .leading){
+                VStack(alignment: .leading) {
                     Text("Colores")
                         .fontWeight(.semibold)
-    
+                    
                     HStack {
                         ColorDotView(color: .white)
                         ColorDotView(color: .black)
                         ColorDotView(color: .blue)
                     }
                 }
-                Spacer() // Pushes the price to the right
+                Spacer()
+                
+                // Button inside the DescriptionView
+                Button(action: {
+                    compra.addTo(seleccion: producto)
+                }) {
+                    Text("\(String(format: "%.2f", producto.price)) €  Añadir")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.red)
+                        .cornerRadius(10)
+                }
             }
         }
         .padding()
@@ -100,20 +101,15 @@ struct DescriptionView: View {
     }
 }
 
-
 struct ColorDotView: View {
     let color: Color
+    
     var body: some View {
         color
             .frame(width: 24, height: 24)
             .clipShape(Circle())
     }
 }
-
-
-
-
-
 
 
 /*#Preview {

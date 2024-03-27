@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Views/ProductListView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD - f7979b65e04da15f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OnlineShop.ProductListView.body.getter : some"
-                  moduleName = "OnlineShop"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/Views/ProductListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "211">
-               </Location>
-               <Location
-                  uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD - ee0ef9d5b270425c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in OnlineShop.ProductListView.body.getter : some"
-                  moduleName = "OnlineShop"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/Views/ProductListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "247">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "05B48BBF-2C35-4A9E-8432-5AA8F77E86D9"
             shouldBeEnabled = "No"
             ignoreCount = "0"

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ProductListView: View {
 
     @ObservedObject var model = ProductsViewModel()
@@ -16,6 +15,7 @@ struct ProductListView: View {
 
     @State private var isProductSelected: Bool = false
 
+    @State private var isDarkMode: Bool = false // Estado para el modo oscuro
 
     var body: some View {
 
@@ -156,28 +156,35 @@ struct ProductListView: View {
 
             }
 
-        }
+            .toolbar {
 
-        /*.onAppear {
+                ToolbarItem(placement: .navigationBarTrailing) {
 
-            model.fetchProducts { error in
+                    HStack {
 
-                if let error = error {
+                        // Sol y Luna para el modo claro/oscuro
+                        Button(action: {
+                            isDarkMode.toggle()
+                            // Cambiar el modo de interfaz según el estado del toggle
+                            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                               let window = windowScene.windows.first {
+                                window.overrideUserInterfaceStyle = isDarkMode ? .dark : .light
+                            }
+                        }) {
+                            Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
+                                .font(.system(size: 20))
+                        }
 
-                    print("Error fetching products: \(error)")
-
+                    }
+                    .padding(10)
                 }
 
             }
 
-        }*/
-
+        }
     }
-
 }
 
-
-    
 
 #Preview {
     ProductListView()

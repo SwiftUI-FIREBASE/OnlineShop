@@ -12,7 +12,7 @@ class NetworkManager {
             
         }
         
-        let(data, response) = try await URLSession.shared.data(from: completeUrl)
+        let(data, _) = try await URLSession.shared.data(from: completeUrl)
         
         do{
             let decoder = JSONDecoder()

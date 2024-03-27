@@ -24,7 +24,6 @@ struct MainView: View {
                     Label("Order", systemImage: "cart.fill")
                 }.badge((compra.order.products.isEmpty) ? 0: compra.order.products.count)
             
-            
         }
     }
 }
