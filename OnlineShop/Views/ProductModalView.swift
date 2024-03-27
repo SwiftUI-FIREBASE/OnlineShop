@@ -33,8 +33,6 @@ struct ProductModalView: View {
                         .cornerRadius(20)
                         .offset(y: -40)
                     
-                    Spacer()
-                    
                     HStack {
                         Spacer()
                         Button(action:{
