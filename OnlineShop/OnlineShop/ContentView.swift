@@ -45,13 +45,13 @@ struct ContentView: View {
                 .navigationTitle("Products")
             }
         }
-        .onAppear {
+        /*.onAppear {
             viewModel.fetchProducts { error in
                 if let error = error {
                     print("Error fetching products: \(error)")
                 }
             }
-        }
+        }*/
     }
 }
 

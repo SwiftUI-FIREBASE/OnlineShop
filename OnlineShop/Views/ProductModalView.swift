@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductModalView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var compra:Compra
-    var producto: ProductDemo
+    var producto: Product
     
     var body: some View {
         VStack{
