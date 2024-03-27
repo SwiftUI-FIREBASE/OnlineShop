@@ -55,7 +55,7 @@ struct ProductModalView: View {
 }
 
 struct DescriptionView: View {
-    var producto: ProductDemo
+    var producto: Product
     
     var body: some View {
         VStack (alignment: .leading){
@@ -118,10 +118,10 @@ struct ColorDotView: View {
 
 
 
-#Preview {
+/*#Preview {
     ProductModalView(producto: MockData.sampleProduct1).environmentObject(Compra())
 }
-
+*/
 /*struct ProductModalView_Previews: PreviewProvider {
     static var previews: some View {
         ProductModalView(producto: ProductDemo(id: 1,
