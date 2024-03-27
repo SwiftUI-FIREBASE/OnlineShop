@@ -18,7 +18,7 @@ class ProductsViewModel: ObservableObject {
         Task{ //hace que sea asíncrona la tarea, consiguiendo concurrencia
             do{
                 let weather_file = try await NetworkManager.shared.getProducts()
-                self.products.append(weather_file)
+                self.products = weather_file
             }catch{
                 
                 if let callError = error as? WEError {

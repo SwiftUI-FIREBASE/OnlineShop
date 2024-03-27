@@ -6,7 +6,7 @@ class NetworkManager {
     static let shared = NetworkManager()    
     private let baseUrl = "https://fakestoreapi.com/products"
     
-    func getProducts() async throws -> Product{
+    func getProducts() async throws -> [Product]{
         guard let completeUrl =  URL(string: baseUrl) else {
             throw WEError.invalidURL("URL INVALIDA")
             
@@ -16,7 +16,7 @@ class NetworkManager {
         
         do{
             let decoder = JSONDecoder()
-            return try decoder.decode(Product.self, from: data)
+            return try decoder.decode([Product].self, from: data)
         }catch{
             print("Error Data")
             throw WEError.invalidData

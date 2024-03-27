@@ -3,4 +3,193 @@
    uuid = "390DD9DC-E5D2-499F-AA4C-21CD8ADF2323"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/ProductListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD - f7979b65e04da15f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OnlineShop.ProductListView.body.getter : some"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/Views/ProductListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "211">
+               </Location>
+               <Location
+                  uuid = "306315BF-E2E6-4F0F-BA2A-6893C2BAE0DD - ee0ef9d5b270425c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in OnlineShop.ProductListView.body.getter : some"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/Views/ProductListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05B48BBF-2C35-4A9E-8432-5AA8F77E86D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewModels/ProductsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewModels/ProductsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchProducts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - 864cb2fb3db32b5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - 6ec0e17b8773dd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - eaba6650a275761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - 4d152c5803617d62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "123">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - 864cb2fb3db32b5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - eaba6650a275761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "8BE00434-2E6E-4C6E-B3D0-A6D9031DF591 - 4d152c5803617d62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in OnlineShop.ProductsViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "OnlineShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam09/Desktop/OnlineShop/OnlineShop/ViewModels/ProductsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
